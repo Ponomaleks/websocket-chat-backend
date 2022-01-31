@@ -1,0 +1,28 @@
+{
+  "name": "websocket-chat-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /websocket-chat-frontend/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ponomaleks/websocket-chat-frontend.git"
+  },
+  "author": "Alexander Ponomarenko <ponomaleks@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ponomaleks/websocket-chat-frontend/issues"
+  },
+  "homepage": "https://github.com/Ponomaleks/websocket-chat-frontend#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
