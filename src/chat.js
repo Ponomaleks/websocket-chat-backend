@@ -1,7 +1,7 @@
 let userName;
 userName = prompt('What is yout nickname?') || 'Anonymous';
 
-const ws = new WebSocket('ws://websocket-chat-backend.glitch.me');
+const ws = new WebSocket('wss://websocket-chat-backend.glitch.me');
 const chat = document.getElementById('chat');
 const lastMsgName = document.querySelector('.active  .last-msg-name');
 const lastMsgPreview = document.querySelector(
